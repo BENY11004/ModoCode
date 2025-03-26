@@ -1,0 +1,99 @@
+.header-gradiant {
+    background: rgb(217, 205, 245);
+    background: radial-gradient(circle, rgba(217, 205, 245, 1) 0%, rgba(255, 255, 255, 0) 40%);
+}
+.cneter-gradiant {
+    background: rgb(217, 205, 245);
+    background: radial-gradient(circle, rgba(217, 205, 245, 0.413960113960114) 9%, rgba(255, 255, 255, 0) 61%);
+}
+.left-gradiant {
+    background: rgb(217, 205, 245);
+    background: radial-gradient(circle, rgba(217, 205, 245, 1) 0%, rgba(255, 255, 255, 0) 61%);
+}
+.side-bar-gradiant {
+    background: rgb(92, 70, 121);
+    background: radial-gradient(circle, rgba(92, 70, 121, 0.8223622212556898) 0%, rgba(255, 255, 255, 0) 69%);
+}
+.logo-gradiant {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(131, 58, 180, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+*:hover {
+    transition: all 200ms ease 30ms;
+}
+.side-bar {
+    position: fixed;
+    top: 0;
+    left: -500px;
+    transition: left 500ms ease;
+}
+.side-bar.active {
+    left: 0;
+}
+.side-bar.de-active {
+    left: -500px;
+}
+.login-background {
+    background: rgb(231, 222, 249);
+    background: linear-gradient(51deg, rgba(231, 222, 249, 1) 0%, rgba(255, 255, 255, 1) 16%, rgba(237, 229, 252, 1) 45%, rgba(254, 254, 255, 1) 69%, rgba(231, 222, 249, 1) 89%, rgba(253, 253, 255, 1) 100%);
+}
+.login-gradiant {
+    background: rgb(92, 70, 121);
+    background: radial-gradient(circle, rgba(92, 70, 121, 0.8223622212556898) 0%, rgba(255, 255, 255, 0) 69%);
+}
+.chat {
+    @apply items-end;
+}
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-up {
+    animation: moveUp 0.5s ease-out;
+}
+.select-project-error {
+    @apply placeholder:text-red-600;
+}
+.Animation {
+    width: 60px;
+    aspect-ratio: 4;
+    --_g: no-repeat radial-gradient(circle closest-side, #000 90%, #0000);
+    background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+    background-size: calc(100% / 3) 100%;
+    animation: l7 1s infinite linear;
+}
+@keyframes l7 {
+    33% {
+        background-size: calc(100% / 3) 0%, calc(100% / 3) 100%, calc(100% / 3) 100%;
+    }
+    50% {
+        background-size: calc(100% / 3) 100%, calc(100% / 3) 0%, calc(100% / 3) 100%;
+    }
+    66% {
+        background-size: calc(100% / 3) 100%, calc(100% / 3) 100%, calc(100% / 3) 0%;
+    }
+}
+@font-face {
+    font-family: vazir;
+    src: url(../font/Vazir-Thin.ttf) format("truetype");
+    font-weight: 100;
+}
+@font-face {
+    font-family: vazir;
+    src: url(../font/Vazir.ttf) format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: vazir;
+    src: url(../font/Vazir-Bold.ttf) format("truetype");
+    font-weight: 900;
+}
